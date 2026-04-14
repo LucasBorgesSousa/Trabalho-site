@@ -1,0 +1,144 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Fundo geral */
+body {
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to right, #f4f4f4, #e0e0e0);
+	color: #333;
+}
+
+/* Container central */
+body {
+	max-width: 900px;
+	margin: auto;
+	padding: 20px;
+	background-color: white;
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+/* Título principal */
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #e3350d;
+}
+
+/* Subtítulos */
+h2 {
+	margin-top: 25px;
+	margin-bottom: 10px;
+	color: #222;
+	border-left: 5px solid #e3350d;
+	padding-left: 10px;
+}
+
+/* Parágrafos */
+p {
+	margin-bottom: 15px;
+	line-height: 1.6;
+}
+
+/* Listas */
+ul, ol {
+	margin-left: 25px;
+	margin-bottom: 15px;
+}
+
+/* Links */
+a {
+	color: #e3350d;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* MENU */
+nav {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+nav a {
+	margin: 0 10px;
+	padding: 8px 12px;
+	background-color: #e3350d;
+	color: white;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+nav a:hover {
+	background-color: #b82a0a;
+}
+
+/* Imagens */
+img {
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Galeria centralizada */
+img {
+	display: inline-block;
+}
+
+/* Formulário */
+input, textarea, button {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	padding: 10px;
+	width: 100%;
+	max-width: 400px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+/* Botão */
+button {
+	background-color: #e3350d;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #b82a0a;
+}
+
+/* Tabela */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+th {
+	background-color: #e3350d;
+	color: white;
+	padding: 10px;
+}
+
+td {
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #ccc;
+}
+
+/* Rodapé */
+p:last-of-type {
+	text-align: center;
+	margin-top: 30px;
+	font-weight: bold;
+	color: #555;
+}
