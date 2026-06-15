@@ -93,6 +93,19 @@ img {
 	display: inline-block;
 }
 
+.galeria{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.galeria img{
+    width:100%;
+    max-width:500px;
+    height:auto;
+}
+
 /* Formulário */
 input, textarea, button {
 	margin-top: 5px;
@@ -142,3 +155,109 @@ p:last-of-type {
 	font-weight: bold;
 	color: #555;
 }
+
+
+.formulario{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.form-row{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.form-row input{
+    flex:1 1 300px;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.menu-toggle{
+    display:none;
+}
+
+@keyframes pikachu{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+}
+
+.galeria img{
+    animation:pikachu 1.5s infinite;
+}
+
+
+@media (max-width: 768px){
+
+    body{
+        padding:10px;
+    }
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    h2{
+        font-size:1.3rem;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    nav a{
+        width:100%;
+        max-width:300px;
+        text-align:center;
+    }
+
+    table{
+        font-size:14px;
+    }
+
+    .menu-toggle{
+        display:block;
+        width:50px;
+        height:50px;
+        margin:10px auto;
+        font-size:28px;
+        background:#e3350d;
+        color:white;
+        border:none;
+        border-radius:8px;
+        cursor:pointer;
+    }
+
+    .menu{
+        display:none;
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    .menu.ativo{
+        display:flex;
+    }
+
+    .menu a{
+        width:90%;
+        max-width:300px;
+        text-align:center;
+    }
+}
+
