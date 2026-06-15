@@ -24,6 +24,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <title>Batalhas</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+
+
 <body>
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCHJQH4R"
@@ -31,20 +34,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <h1>Sistema de Batalhas em Pokémon Fire Red</h1>
 
-    <table border="1">
-        <tr>
-            <td><a href="index.html" target="_blank">Home</a></td>
-            <td><a href="batalhas.html" target="_blank">Batalhas</a></td>
-            <td><a href="historia.html" target="_blank">História</a></td>
-            <td><a href="iniciais.html" target="_blank">Iniciais</a></td>
-            <td><a href="imagens.html" target="_blank">Imagens</a></td>
-            <td><a href="imagens.html" target="_blank">Imagens</a></td>
-            <td><a href="lendarios.html" target="_blank">Lendários</a></td>
-            <td><a href="mapa.html" target="_blank">Mapa</a></td>
-            <td><a href="links.html" target="_blank">Links</a></td>
-            <td><a href="contato.html" target="_blank">Contato</a></td>
-        </tr>
-    </table>
+<button class="menu-toggle">☰</button>
+
+<nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="batalhas.html">Batalhas</a>
+    <a href="historia.html">História</a>
+    <a href="iniciais.html">Iniciais</a>
+    <a href="imagens.html">Imagens</a>
+    <a href="lendarios.html">Lendários</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="links.html">Links</a>
+    <a href="contato.html">Contato</a>
+</nav>
     
     <h2>Introdução</h2>
     <p>As batalhas são uma das principais mecânicas de Pokémon Fire Red. Durante o jogo, o treinador enfrenta pokémons selvagens e outros treinadores em combates baseados em turnos, onde estratégia e conhecimento dos tipos são essenciais para vencer.</p>
@@ -53,7 +55,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2>Como Funcionam as Batalhas</h2>
     <p>As batalhas em Pokémon Fire Red acontecem em turnos. Em cada rodada, o jogador pode escolher entre atacar, usar um item, trocar de pokémon ou tentar fugir (no caso de batalhas contra pokémons selvagens).</p>
     <p>A ordem dos ataques geralmente depende da velocidade dos pokémons envolvidos. O pokémon mais rápido ataca primeiro, o que pode ser decisivo no resultado da batalha.</p>
+    <div class="galeria">
     <img src="Imagens/batalha.webp" width="500">
+    </div>
+
 
     <h2>Tipos de Ações</h2>
     <ul>
@@ -70,8 +75,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2>Batalhas importantes</h2>
     <p>Ao longo do jogo, existem batalhas mais desafiadoras, como os confrontos contra líderes de ginásio e a Elite dos Quatro. Esses adversários possuem equipes mais fortes e exigem maior preparo do jogador.</p>
     <p>Para vencer, é importante treinar seus pokémons, escolher bem os ataques e montar uma equipe equilibrada.</p>
+    <div class="galeria">
     <img src="Imagens/elite_four.jpg" width="500">
-    
+    </div>
 
     <h2>Dicas de Batalha</h2>
     <ul>
@@ -87,5 +93,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <footer>
         <p>Lucas Borges de Sousa RA:5174402</p>
     </footer>
+
+    <script>
+        const botao = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        botao.addEventListener('click', function() {
+        menu.classList.toggle('ativo');
+    });
+    </script>
 </body>
 </html>
