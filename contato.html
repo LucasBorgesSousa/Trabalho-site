@@ -28,26 +28,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCHJQH4R"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <table bordezr="1">
-        <tr>
-            <td><a href="index.html" target="_blank">Home</a></td>
-            <td><a href="batalhas.html" target="_blank">Batalhas</a></td>
-            <td><a href="historia.html" target="_blank">História</a></td>
-            <td><a href="iniciais.html" target="_blank">Iniciais</a></td> 
-            <td><a href="lideres.html" target="_blank">Líderes</a></td>
-            <td><a href="imagens.html" target="_blank">Imagens</a></td>
-            <td><a href="lendarios.html" target="_blank">Lendários</a></td>
-            <td><a href="mapa.html" target="_blank">Mapa</a></td>
-            <td><a href="links.html" target="_blank">Links</a></td>
-            <td><a href="contato.html" target="_blank">Contato</a></td>
-        </tr>
-    </table>
+<button class="menu-toggle">☰</button>
+
+<nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="batalhas.html">Batalhas</a>
+    <a href="historia.html">História</a>
+    <a href="iniciais.html">Iniciais</a>
+    <a href="imagens.html">Imagens</a>
+    <a href="lendarios.html">Lendários</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="links.html">Links</a>
+    <a href="contato.html">Contato</a>
+</nav>
 
 	<h1>Contato</h1>
 
 	<h2>Fale Conosco</h2>
 	<p>Utilize o formulário abaixo para entrar em contato, enviar dúvidas ou sugestões sobre o site.</p>
-
+	<div class="formulario">
 	<form>
 
 		<label>Nome:</label><br>
@@ -73,10 +72,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<button type="submit">Enviar</button>
 
 	</form>
+	</div>
 
     <footer>
         <p>Lucas Borges de Sousa RA:5174402</p>
     </footer>
 
+	    <script>
+        const botao = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        botao.addEventListener('click', function() {
+        menu.classList.toggle('ativo');
+    });
+    </script>
 </body>
 </html>
