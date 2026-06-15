@@ -31,20 +31,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <h1>Líderes de Ginásio de Pokémon Fire Red</h1>
     
-    <table border="1">
-        <tr>
-            <td><a href="index.html" target="_blank">Home</a></td>
-            <td><a href="batalhas.html" target="_blank">Batalhas</a></td>
-            <td><a href="historia.html" target="_blank">História</a></td>
-            <td><a href="iniciais.html" target="_blank">Iniciais</a></td>
-            <td><a href="lideres.html" target="_blank">Líderes</a></td>
-            <td><a href="imagens.html" target="_blank">Imagens</a></td>
-            <td><a href="lendarios.html" target="_blank">Lendários</a></td>
-            <td><a href="mapa.html" target="_blank">Mapa</a></td>
-            <td><a href="links.html" target="_blank">Links</a></td>
-            <td><a href="contato.html" target="_blank">Contato</a></td>
-        </tr>
-    </table>
+<button class="menu-toggle">☰</button>
+
+<nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="batalhas.html">Batalhas</a>
+    <a href="historia.html">História</a>
+    <a href="iniciais.html">Iniciais</a>
+    <a href="imagens.html">Imagens</a>
+    <a href="lendarios.html">Lendários</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="links.html">Links</a>
+    <a href="contato.html">Contato</a>
+</nav>
 
     <h2>Introdução</h2>
     <p>Durante a jornada em Pokémon Fire Red, o jogador deve enfrentar os líderes de ginásio espalhados pela região de Kanto. Cada líder é especialista em um tipo de pokémon e, ao ser derrotado, concede uma insígnia ao treinador. Essas insígnias são necessárias para acessar a Liga Pokémon e representam o progresso do jogador ao longo do jogo.</p>
@@ -113,7 +112,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </tr>
     </table>
 
+    <div class="galeria">
     <img src="Imagens/lideres.jpg" width="400">
+    </div>
 
     <p>Cada líder apresenta desafios únicos, exigindo que o jogador utilize estratégias diferentes para vencer. Conhecer as fraquezas de cada tipo de pokémon é fundamental para conquistar as insígnias com mais facilidade. Além disso, conforme o jogador avança, os ginásios se tornam mais difíceis, exigindo pokémons mais fortes e bem treinados.</p>
 
@@ -130,5 +131,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <footer>
             <p>Lucas Borges de Sousa RA:5174402</p>
     </footer>
+
+        <script>
+        const botao = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        botao.addEventListener('click', function() {
+        menu.classList.toggle('ativo');
+    });
+    </script>
 </body>
 </html>
